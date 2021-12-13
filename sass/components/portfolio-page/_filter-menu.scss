@@ -1,0 +1,62 @@
+//================CSS RULES FOR MAIN SECTION IN PORTFOLIO===========//
+
+.projects-section {
+  @include section;
+
+  &__container {
+    @include container(block);
+  }
+
+  &__title {
+    @extend %visually-hidden;
+  }
+}
+
+//================END OF CSS RULES FOR MAIN SECTION IN PORTFOLIO===========//
+
+//================FILTER MENU STYLES start here==================//
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__element {
+    padding-right: 8px;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.filter__btn {
+  @include button(
+    $display: inline-block,
+    $min-width: 73px,
+    $min-height: auto,
+    $padd-y: 6px,
+    $padd-x: 22px,
+    $bcg-color: getColor(backround-alt),
+    $color: getColor(headings)
+  );
+  @include font-preset(500, 16px, 26px);
+
+  border: transparent;
+
+  @include transition(background-color);
+  @include transition(color);
+  @include transition(box-shadow);
+
+  &:hover,
+  &:focus {
+    background-color: getColor(accent);
+    color: getColor(text-alt);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    cursor: pointer;
+  }
+}

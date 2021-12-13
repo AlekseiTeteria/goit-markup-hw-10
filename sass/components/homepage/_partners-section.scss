@@ -1,0 +1,44 @@
+.partners {
+  @include section;
+
+  &__container {
+    @include container($display: block);
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include font-preset(700, 36px, 42px);
+    text-align: center;
+
+    color: getColor(headings);
+  }
+}
+
+.company {
+  display: flex;
+
+  &__element {
+    width: 170px;
+
+    padding: 16px 32px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+
+  &__element:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.company__icon {
+  fill: #afb1b8;
+
+  transition: fill getTransition(speed) getTransition(speed-func);
+
+  .company__link:hover &,
+  .company__link:focus & {
+    fill: getColor(accent);
+  }
+}

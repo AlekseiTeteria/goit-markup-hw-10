@@ -1,0 +1,68 @@
+//=====================COLORS MAP===========================//
+$colors: (
+  "accent": #2196f3,
+  //main and accent color in website
+  "headings": #212121,
+  //mostly used color of headlines
+  "text-main": #757575,
+  // mostly used color of text
+  "text-alt": #ffffff,
+  // alternative color of text
+  "background-body": #ffffff,
+  // body background color
+  "background-alt": #f5f4fa,
+  //background of cards in advantagies section
+  //background-color in team section
+  //background-color in filter section
+  "background-footer": #2f303a,
+  // color of background in footer
+  "background-socials": #43444d,
+  // used in socials icons in footer
+  "background-overlay-card": rgba(33, 150, 243, 0.9),
+  //cards overlay background color
+  "logo-header": #000000,
+  //color of "Studio" part in logo in header
+  "logo-footer": #ffffff,
+  //color of "Studio" part in logo in footer
+  "links-footer": rgba(255, 255, 255, 0.6),
+  "links-footer-lighter": #ffffff,
+  // coor of links in footer,
+  "fill-icon": #757575,
+  //color of svg icons fill
+);
+
+//=================TRANSITION AND MARGINS================//
+$transitions: (
+  "speed": 250ms,
+  //is used for transitions while hovered and focused
+  "speed-alt": 500ms,
+  // aplies for scaling text in cards overlay
+  "speed-func": cubic-bezier(0.4, 0, 0.2, 1),
+  //is used for  transitions while hovered and focused
+);
+
+$grid-margin-item: 30px; // used in calc() for setting up margins between elements in flex grids
+
+//=====================FONTS=========================//
+
+$font-main: "Roboto", sans-serif;
+$font-second: "Raleway", sans-serif;
+$font-weight: 400;
+$font-size: 14px;
+$line-height: 26px;
+$letter-spacing: 0.03em;
+
+//=====================COLORS MAP FUNCTIONS==============//
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+//=====================TRANSITION FUNCTIONS==============//
+@function getTransition($key) {
+  @return map-get($transitions, $key);
+}
+
+//=====================FONTS FUNCTIONS==================//
+@function lineHeight($font-size, $line-height) {
+  @return ($line-height / $font-size);
+}

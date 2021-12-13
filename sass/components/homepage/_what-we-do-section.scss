@@ -1,0 +1,49 @@
+.service {
+  @include section(0, 94px);
+
+  &__container {
+    @include container($display: block);
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include font-preset(700, 36px, 42px);
+    text-align: center;
+
+    color: getColor(headings);
+  }
+}
+
+.example {
+  // display: flex;
+  // flex-wrap: wrap;
+  @include grid(100%, 3);
+
+  z-index: 1;
+
+  &__wrapper {
+    position: relative;
+  }
+}
+
+.example__meta {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 27px 0;
+  margin: auto;
+
+  background: rgba(47, 48, 58, 0.8);
+
+  & > p {
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: getColor(text-alt);
+  }
+}

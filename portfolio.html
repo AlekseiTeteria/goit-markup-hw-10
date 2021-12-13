@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="page-header">
+        <div class="page-header__container">
+            <!-- webstudio logo -->
+            <a class="header__logo" href="./index.html"><span class="logo">Web</span>Studio</a>
+            <!-- website navigation -->
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="./index.html">
+                            Студия
+                        </a>
+                    </li>
+    
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--current" href="./portfolio.html">
+                            Портфолио
+                        </a>
+                    </li>
+    
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- contacts -->
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+    
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10px" height="16px">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <section class="projects-section">
+            <div class="projects-section__container">
+                <h1 class="projects-section__title">
+                    Примеры работ
+                </h1>
+                
+                <ul class="filter">
+                    <li class="filter__element">
+                        <button type="button"
+                                class="filter__btn" aria-label="Все">
+                            Все
+                        </button>
+                    </li>
+                    <li class="filter__element">
+                        <button type="button"
+                                class="filter__btn" aria-label="Веб-сайты">
+                            Веб-сайты
+                        </button>
+                    </li>
+                    <li class="filter__element">
+                        <button type="button"
+                                class="filter__btn"aria-label="Приложения">
+                            Приложения
+                        </button>
+                    </li>
+                    <li class="filter__element">
+                        <button type="button"
+                                class="filter__btn" aria-label="Дизайн">
+                            Дизайн
+                        </button>
+                    </li>
+                    <li class="filter__element">
+                        <button type="button"
+                                class="filter__btn" aria-label="Маркетинг">
+                            Маркетинг
+                        </button>
+                    </li>
+                </ul>
+                
+                <ul class="product">
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/technokryak-web-site.jpg" alt="Изображение сайта Технокряк" width="370">
+                                
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера конкурентов.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Технокряк
+                                </h2>
+                                <p class="product__type">
+                                    Веб-сайт
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/poster-new-orlean-vs-golden-star-design.jpg" alt="Два баскетболиста борятся за мяч"
+                                    width="370">
+
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Нереально красивый постер нереально красивого баскетбольного матча с нереально крутыми игроками и нереально преданными поклонниками в нереальном Нью Орлеане.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Постер New Orlean vs Golden Star
+                                </h2>
+                                <p class="product__type">
+                                    Дизайн
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/seafood-restraunt-app.jpg" alt="Логотип ресторана Seafood" width="370">
+                                
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Ресторан Seafood - место, где можно попробовать любые дары моря, даже Посейдона. Интерьер сдержарнный, музыка - легкая и живая, напитки - изысканные. Есть опция морской рыбалки на судне с пьяными моряками.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Ресторан Seafood
+                                </h2>
+                                <p class="product__type">
+                                    Приложение
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/prime-project-marketing.jpg" alt="Наушники, которые надеваются через голову"
+                                    width="370">
+                                
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Проект Prime - сервис, который поможет увеличить продажи каждому клиенту. Даже если вы ничего не планировали продавать,
+                                        Prime все равно продадаст ваши вещи или услуги. Увы, но так устроен маркетинг рептилоидов.
+                                    </p>
+                                </div>
+                            </div>
+ 
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Проект Prime
+                                </h2>
+                                <p class="product__type">
+                                    Маркетинг
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/boxes-project-app.jpg" alt="Две коробки. Одна белая, другая коричневая" width="370">
+                                
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Приложение Boxes создано для тех, кто любит коробки. Маленькие, средние, большие, с бантиками и без, даже с доставки Новой почты - Boxes найдет все. Признайтесь, вы - котейка?
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Проект Boxes
+                                </h2>
+                                <p class="product__type">
+                                    Приложение
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/web-site-inspiration.jpg" alt="Компьютер Mac с открытым сайтом" width="370">
+                            
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Парадоксально, но веб-сайт - инструмент массонов. Хоть они и прилетели с Нубиру, однако именно интернет поможет захватить власть в Солнечной системе, а позже и на Альфа Центавра.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Inspiration has no borders
+                                </h2>
+                                <p class="product__type">
+                                    Веб-сайт
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/publisher-limited-edition-design.jpg"
+                                    alt="Разворот журнала с иллюстрациями" width="370">
+                    
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Издание Limited Edition основали трое друзей: Винсент Вега, Джулс Уиннфилд и Мия
+                                        Уоллес. Благодаря многолетнему опыту, издательство оздоравливает литературный мир инъекциями молодых
+                                        талантов.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Издание Limited Edition
+                                </h2>
+                                <p class="product__type">
+                                    Дизайн
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/project-lab-app.jpg" alt="Лейбл с логотипом компании" width="370">
+                            
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Проект LAB сотрудничает только с лабоработиями. Неудивительно, ведь стартап пренадлежит Уолтеру Уайту и Джесси Пинкману. Требование одно - оборудование в трейлере и никаких Los Pollos Hermanos.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Проект LAB
+                                </h2>
+                                <p class="product__type">
+                                    Маркетинг
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="product__item">
+                        <a class="product__link" href="">
+                            <div class="overlay">
+                                <img src="./images/work-examples/growing-business-app.jpg" alt="Ноутбук с приложением Growing Business" width="370">
+                            
+                                <div class="overlay__wrapper">
+                                    <p class="overlay__text">
+                                        Платформа Growing Business поможет забыть, что биткоин стоил 600 баксов, когда ты о нем узнал. Искусстевенный интелект вычисляет перспективыне токены и позволяет зарабатывать лежа на диване.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="product__description">
+                                <h2 class="product__label">
+                                    Growing Business
+                                </h2>
+                                <p class="product__type">
+                                    Приложение
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- fotter -->
+    <footer class="page-footer">
+        <div class="page-footer__container">
+            <div>
+                <a class="footer__logo" href="./index.html">
+                    <span class="logo">Web</span>Studio
+                </a>
+    
+                <address>
+                    <ul class="address">
+                        <li class="address__item">
+                            <a class="address__geo" href="https://goo.gl/maps/qYnhFTQPUGNC2JMP8">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
+    
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:info@example.com">
+                                info@example.com
+                            </a>
+                        </li>
+    
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380991111111">
+                                +38 099 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="socials">
+                <h3 class="socials__title">Присоединяйтесь</h3>
+                <ul class="socials__list">
+                    <li class="socials__element">
+                        <a class="socials__link" href="#">
+                            <svg class="socials__icon" width="20px" height="20px" aria-label="Instagram">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="socials__element">
+                        <a class="socials__link" href="#">
+                            <svg class="socials__icon" width="20px" height="20px" aria-label="Twitter">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="socials__element">
+                        <a class="socials__link" href="#">
+                            <svg class="socials__icon" width="20px" height="20px" aria-label="Facebook">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li class="socials__element">
+                        <a class="socials__link" href="#">
+                            <svg class="socials__icon" width="20px" height="20px" aria-label="LinkedIn">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="mailing">
+                <b class="mailing__title">Подпишитесь на рассылку</b>
+                <form name="signup_mailing" class="mailing__form">
+                    <label>
+                        <input type="email" name="email" class="mailing__input" placeholder="E-mail">
+                    </label>
+    
+                    <button type="submit" class="mailing__btn">
+                        Подписаться
+                        <svg class="mailing__icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

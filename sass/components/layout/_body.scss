@@ -1,0 +1,8 @@
+body {
+  font-family: $font-main;
+  font-style: normal;
+  @include font-preset;
+
+  background-color: getColor(background-body);
+  color: getColor(text-main);
+}

@@ -1,0 +1,89 @@
+//============CONTAINER MIXIN================//
+@mixin container($display: flex, $padd-top: 0, $padd-btm: 0) {
+  display: $display;
+  width: 1200px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: $padd-top;
+  padding-bottom: $padd-btm;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//===========SECTION MIXIN==================//
+@mixin section($padding-top: 94px, $padding-btm: 94px) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-btm;
+}
+
+//===========BUTTONS MIXIN==================//
+@mixin button(
+  $display,
+  $min-width,
+  $min-height,
+  $padd-y,
+  $padd-x,
+  $bcg-color,
+  $color
+) {
+  display: $display;
+  align-items: center;
+
+  min-width: $min-width;
+  min-height: $min-height;
+
+  padding: $padd-y $padd-x;
+
+  font-family: inherit;
+  text-align: center;
+
+  border-radius: 4px;
+
+  background-color: $bcg-color;
+  color: $color;
+
+  cursor: pointer;
+}
+
+//===================FONT PRESETS====================//
+@mixin font-preset(
+  $font-weight: 400,
+  $font-size: 14px,
+  $line-height: 24px,
+  $letter-spacing: 0.03em
+) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: lineHeight($font-size, $line-height);
+  letter-spacing: $letter-spacing;
+}
+
+//==================GRID PRESET========================//
+
+//this mixin is used to build grids
+@mixin grid($width: 100%, $quantaty: 2, $grid-margin: $grid-margin-item) {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * #{$grid-margin});
+  margin-top: calc(-1 * #{$grid-margin});
+
+  padding: 0;
+
+  @content;
+
+  &__item {
+    flex-basis: calc(#{$width} / #{$quantaty} - #{$grid-margin});
+    margin-left: $grid-margin;
+    margin-top: $grid-margin;
+  }
+}
+
+//==============TRANSITION MIXINS====================//
+@mixin transition($property, $time: 250ms) {
+  transition: $property $time getTransition(speed-func);
+}
+
+//==================RESPONSIVE MIXINS========================//

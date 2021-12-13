@@ -1,0 +1,44 @@
+.advantagies {
+  @include section;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    @extend %visually-hidden;
+  }
+}
+
+.pluses {
+  @include grid(100%, 4);
+}
+
+.card {
+  min-width: 270px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+
+  background-color: getColor(background-alt);
+
+  &__label {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    line-height: lineHeight(14px, 16px);
+
+    text-transform: uppercase;
+    color: getColor(headings);
+  }
+
+  &__meta {
+    @include font-preset;
+  }
+}
