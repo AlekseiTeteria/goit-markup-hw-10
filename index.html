@@ -20,12 +20,23 @@
                 <!-- website navigation -->
                 <nav>
                     <!--mobile menu -->
-                    <button class="mobile-menu-btn" type="button">
-                        <svg class="mobile-menu-btn__icon" width="40px" height="40px">
-                            <use class="mobile-menu-btn__menu is-opened" href="./images/icons.svg#icon-mobile-menu"></use>
-                            <use class="mobile-menu__cross is-closed" href="./images/icons.svg#icon-mobile-cross"></use>
-                        </svg>
-                    </button>
+                    <div class="menu">
+                        <button type="button"
+                                class="burger"
+                                aria-expanded="false"
+                                [data-menu-button]>
+                        
+                            <svg class="burger__icon" width="40px" height="40px" aria-label="Переключатель модильного меню">
+                        
+                                <use class="burger__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+                                <use class="burger__icon-cross" href="./images/icons.svg#icon-mobile-cross"></use>
+                            </svg>
+                        </button>
+                        
+                        <div class="menu__container">
+                            Мобильное меню
+                        </div>
+                    </div>
 
                     <ul class="navigation">
                         <li class="navigation__item">
@@ -610,6 +621,7 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 
     

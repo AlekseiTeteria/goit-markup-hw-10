@@ -16,8 +16,7 @@
 }
 
 //===============mobile menu button============//
-
-.mobile-menu-btn {
+.burger {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -28,12 +27,25 @@
   &__icon {
     fill: #000000;
   }
+
+  &__icon-cross {
+    display: none;
+  }
+
+  &.is-opened .burger__icon-menu {
+    display: none;
+  }
+  &.is-opened .burger__icon-cross {
+    display: block;
+  }
 }
 
-.mobile-menu-btn__menu.is-open .mobile-menu-btn__menu {
-  display: none;
-}
+.menu__container {
+  position: absolute;
+  bottom: -100%;
 
-.mobile-menu-btn__cross.is-closed .mobile-menu-btn__cross {
-  display: none;
+  width: 100%;
+  // display: none;
+
+  background-color: coral;
 }

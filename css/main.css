@@ -377,7 +377,7 @@ body {
   display: none;
 }
 
-.mobile-menu-btn {
+.burger {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -387,16 +387,27 @@ body {
   background-color: transparent;
 }
 
-.mobile-menu-btn__icon {
+.burger__icon {
   fill: #000000;
 }
 
-.mobile-menu-btn__menu.is-open .mobile-menu-btn__menu {
+.burger__icon-cross {
   display: none;
 }
 
-.mobile-menu-btn__cross.is-closed .mobile-menu-btn__cross {
+.burger.is-opened .burger__icon-menu {
   display: none;
+}
+
+.burger.is-opened .burger__icon-cross {
+  display: block;
+}
+
+.menu__container {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  background-color: coral;
 }
 
 .hero {
