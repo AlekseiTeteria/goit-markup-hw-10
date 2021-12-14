@@ -1,0 +1,39 @@
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+  background-color: wheat;
+}
+
+.navigation {
+  display: none;
+}
+
+.contacts {
+  display: none;
+}
+
+//===============mobile menu button============//
+
+.mobile-menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  &__icon {
+    fill: #000000;
+  }
+}
+
+.mobile-menu-btn__menu.is-open .mobile-menu-btn__menu {
+  display: none;
+}
+
+.mobile-menu-btn__cross.is-closed .mobile-menu-btn__cross {
+  display: none;
+}

@@ -1,16 +1,16 @@
 //============CONTAINER MIXIN================//
-@mixin container($display: flex, $padd-top: 0, $padd-btm: 0) {
-  display: $display;
-  width: 1200px;
+// @mixin container($display: flex, $padd-top: 0, $padd-btm: 0) {
+//   display: $display;
+//   width: 1200px;
 
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: $padd-top;
-  padding-bottom: $padd-btm;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   padding-top: $padd-top;
+//   padding-bottom: $padd-btm;
 
-  margin-left: auto;
-  margin-right: auto;
-}
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 //===========SECTION MIXIN==================//
 @mixin section($padding-top: 94px, $padding-btm: 94px) {
