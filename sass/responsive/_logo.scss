@@ -1,0 +1,6 @@
+.logo,
+.header__logo,
+.footer__logo {
+  font-family: $font-second;
+  @include font-preset($font-weight: 700, $font-size: 24px, $line-height: 28px);
+}
