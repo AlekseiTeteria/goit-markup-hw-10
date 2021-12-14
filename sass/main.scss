@@ -2,9 +2,9 @@
 @import "utils/variables";
 @import "utils/base/default-styles-reset";
 @import "utils/visually-hidden";
-// @import "components/placeholders";
+@import "components/placeholders";
 @import "components/mixins";
-// @import "components/layout/body";
+@import "components/layout/body";
 // @import "components/layout/page-header";
 @import "components/layout/logo";
 // @import "components/layout/page-footer";
@@ -25,3 +25,4 @@
 @import "./responsive/team";
 @import "./responsive/partners";
 @import "./responsive/footer";
+@import "./responsive/backdrop";

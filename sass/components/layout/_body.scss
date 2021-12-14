@@ -5,4 +5,6 @@ body {
 
   background-color: getColor(background-body);
   color: getColor(text-main);
+
+  overflow: hidden;
 }
