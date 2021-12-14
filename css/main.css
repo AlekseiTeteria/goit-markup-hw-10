@@ -290,6 +290,17 @@ textarea {
   resize: none;
 }
 
+.advantagies__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo,
 .header__logo,
 .footer__logo {
@@ -325,7 +336,6 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 15px;
-  background-color: wheat;
 }
 
 .navigation {
@@ -407,5 +417,68 @@ textarea {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0em;
+}
+
+.advantagies {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantagies__container {
+  padding: 0 15px;
+}
+
+.pluses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+  padding: 0;
+  margin-top: 0;
+}
+
+.pluses__item {
+  -ms-flex-preferred-size: calc(100% / 1 - 30px);
+      flex-basis: calc(100% / 1 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.pluses__item:first-child {
+  margin-top: 0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.card__label {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  color: #212121;
+  text-align: center;
+}
+
+.card__meta {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=main.css.map */
