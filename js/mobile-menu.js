@@ -1,8 +1,8 @@
 (() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const mobileMenuRef = document.querySelector("[data-menu]");
+    const menuBtnRef = document.querySelector("[data-burger-btn]");
+    const mobileMenuRef = document.querySelector("[data-menu-container]");
 
-    menuBtnRef.addEventListener('click', () => {
+    menuBtnRef.addEventListener("click", () => {
         const expanded =
             menuBtnRef.getAttribute("aria-expanded") === "true" || "false";
     

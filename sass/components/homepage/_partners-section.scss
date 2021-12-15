@@ -18,17 +18,31 @@
 .company {
   display: flex;
 
-  &__element {
-    width: 170px;
+  &__link {
+    display: block;
+    width: 100%;
+  }
+}
 
-    padding: 16px 32px;
+.company__element {
+  width: 170px;
 
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 
-  &__element:not(:last-child) {
-    margin-right: 30px;
+  &:hover,
+  &:focus {
+    border-color: getColor(accent);
+
+    @include transition(border-color);
+
+    cursor: pointer;
   }
 }
 
@@ -37,8 +51,8 @@
 
   transition: fill getTransition(speed) getTransition(speed-func);
 
-  .company__link:hover &,
-  .company__link:focus & {
+  .company__element:hover &,
+  .company__element:focus & {
     fill: getColor(accent);
   }
 }
