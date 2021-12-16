@@ -30,6 +30,10 @@
     text-transform: uppercase;
 
     color: getColor(text-alt);
+
+    @media screen and (max-width: 767px) {
+      @include font-preset(900, 26px, 42px, 0.06em);
+    }
   }
 
   &__btn {
