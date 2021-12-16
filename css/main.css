@@ -1641,6 +1641,12 @@ body {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .projects-section {
+    padding: 60px 0;
+  }
+}
+
 .projects-section__container {
   display: block;
   padding-right: 15px;
@@ -1682,8 +1688,21 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter {
+    margin-bottom: 40px;
+  }
+}
+
 .filter__element {
   padding-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__element {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
 }
 
 .filter:last-child {
