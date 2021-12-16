@@ -1763,6 +1763,25 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    padding: 0;
+  }
+  .product__item {
+    -ms-flex-preferred-size: calc(100% / 1 - 30px);
+        flex-basis: calc(100% / 1 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
 .product__description {
   padding: 20px 24px;
   background-color: #ffffff;
