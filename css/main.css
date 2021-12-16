@@ -1264,6 +1264,12 @@ body {
   color: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .service {
+    display: none;
+  }
+}
+
 .example {
   display: -webkit-box;
   display: -ms-flexbox;
