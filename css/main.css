@@ -1026,6 +1026,13 @@ body {
   background-color: #2f303a;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
 .hero__container {
   display: block;
   padding-right: 15px;
