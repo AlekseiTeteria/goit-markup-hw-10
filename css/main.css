@@ -1812,6 +1812,15 @@ body {
   color: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
+
 .form__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1934,6 +1943,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .checkbox {
+    width: 100%;
+  }
+}
+
 .checkbox__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1943,6 +1958,15 @@ body {
           align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .checkbox__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.01em;
+  }
 }
 
 .checkbox__label > a {
