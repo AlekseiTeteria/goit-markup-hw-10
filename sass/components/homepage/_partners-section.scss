@@ -1,6 +1,10 @@
 .partners {
   @include section;
 
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
+
   &__container {
     @include container($display: block);
   }
@@ -12,6 +16,12 @@
     text-align: center;
 
     color: getColor(headings);
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+
+      @include font-preset(700, 28px, 32px);
+    }
   }
 }
 
@@ -21,6 +31,18 @@
   &__link {
     display: block;
     width: 100%;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+
+    margin: -15px;
   }
 }
 
@@ -31,6 +53,17 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
 
   &:not(:last-child) {
     margin-right: 30px;
