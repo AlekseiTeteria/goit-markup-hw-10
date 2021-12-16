@@ -58,8 +58,7 @@
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
 
-    padding-left: 0;
-    padding-right: 0;
+    padding: 16px 0;
 
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -67,6 +66,10 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0px;
+    }
   }
 
   &:hover,

@@ -51,8 +51,11 @@
   @include transition(transform, getTransition(speed-alt));
 
   @media screen and (max-width: 767px) {
-    width: calc(100% / 30px);
+    width: calc(100% - 30px);
     height: auto;
+
+    min-width: auto;
+    min-height: auto;
 
     overflow: scroll;
   }

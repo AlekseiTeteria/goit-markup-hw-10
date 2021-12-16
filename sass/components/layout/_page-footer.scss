@@ -1,16 +1,17 @@
 .page-footer {
   background-color: getColor(background-footer);
 
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
+
   &__container {
     @include container($padd-top: 60px, $padd-btm: 60px);
 
     @media screen and (max-width: 767px) {
+      display: block;
       padding: 0 15px;
     }
-  }
-
-  @media screen and (max-width: 767px) {
-    padding: 60px 0;
   }
 }
 
@@ -69,6 +70,11 @@
 .socials {
   margin-left: 70px;
 
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+
   &__title {
     padding-top: 12px;
     margin-bottom: 20px;
@@ -95,10 +101,6 @@
 
   &__element:not(:last-child) {
     margin-right: 10px;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
   }
 }
 
