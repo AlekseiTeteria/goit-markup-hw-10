@@ -2,6 +2,10 @@
   @include section;
   background-color: getColor(background-alt);
 
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+  }
+
   &__container {
     @include container($display: block);
   }
@@ -13,12 +17,23 @@
     text-align: center;
 
     color: getColor(headings);
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+
+      @include font-preset(700, 28px, 33px);
+    }
   }
 }
 
 .staff {
   flex-wrap: wrap;
   @include grid($quantaty: 4);
+
+  @media screen and (max-width: 767px) {
+    @include grid($quantaty: 1);
+    margin-top: 0;
+  }
 
   &__item {
     padding-bottom: 30px;
@@ -29,6 +44,10 @@
     overflow: hidden;
 
     background-color: getColor(background-body);
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 24px;
+    }
   }
 
   &__content {
@@ -53,6 +72,12 @@
     line-height: lineHeight(16px, 19px);
 
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .staff__item:first-child {
+    margin-top: 0;
   }
 }
 
