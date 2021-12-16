@@ -10,6 +10,11 @@
 
   background-color: #2f303a;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
   &__container {
     @include container(block, 0, 0);
     text-align: center;
