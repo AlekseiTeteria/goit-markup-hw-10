@@ -3,6 +3,10 @@
 .product {
   @include grid($quantaty: 3);
 
+  @media screen and (max-width: 767px) {
+    @include grid($quantaty: 1);
+  }
+
   &__description {
     padding: 20px 24px;
 
