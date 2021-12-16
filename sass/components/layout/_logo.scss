@@ -3,6 +3,11 @@
 .footer__logo {
   font-family: $font-second;
   @include font-preset($font-weight: 700, $font-size: 26px, $line-height: 31px);
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: lineHeight(24px, 28px);
+  }
 }
 
 .logo {

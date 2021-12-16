@@ -67,18 +67,25 @@
 
 //==============mobile-menu styles start here===============//
 .menu-container {
-  // display: none;
-
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100vh;
-  // // display: none;
+
   background-color: #ffffff;
-  &.is-opened {
-    display: block;
-  }
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity getTransition(speed) getTransition(speed-func),
+    visibility getTransition(speed) getTransition(speed-func);
+}
+
+.menu-container.is-opened {
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile-socials {
@@ -125,8 +132,6 @@
 
 .burger-btn__icon {
   fill: #000000;
-
-  @include transition(fill);
 
   z-index: 99;
 
