@@ -8,10 +8,24 @@
   &__title {
     @extend %visually-hidden;
   }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .pluses {
   @include grid(100%, 4);
+
+  @media screen and (max-width: 767px) {
+    @include grid(100%, 1);
+    margin-top: 0;
+
+    &__item:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .card {
@@ -27,6 +41,16 @@
   border-radius: 4px;
 
   background-color: getColor(background-alt);
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &__label {
     margin-bottom: 10px;
