@@ -49,6 +49,13 @@
   transform: translate(-50%, -50%) scale(1);
 
   @include transition(transform, getTransition(speed-alt));
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% / 30px);
+    height: auto;
+
+    overflow: scroll;
+  }
 }
 
 .close-btn {
