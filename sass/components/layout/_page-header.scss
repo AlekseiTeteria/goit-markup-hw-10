@@ -200,6 +200,8 @@
   opacity: 0;
   visibility: hidden;
 
+  z-index: 98;
+
   transition: opacity getTransition(speed) getTransition(speed-func),
     visibility getTransition(speed) getTransition(speed-func);
 
@@ -272,11 +274,15 @@
 
   z-index: 99;
 
-  .burger-btn:hover &,
-  .burger-btn:focus & {
-    fill: getColor(accent);
+  // .burger-btn:hover &,
+  // .burger-btn:focus & {
+  //   fill: getColor(accent);
+  // }
 
-    cursor: pointer;
+  // @include getTransition(fill 500ms);
+
+  .burger-btn:active & {
+    fill: getColor(accent);
   }
 
   @media screen and (min-width: 768px) {
