@@ -3,7 +3,7 @@
 .projects-section {
   @include section;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding: 60px 0;
   }
 
@@ -29,6 +29,10 @@
   @media screen and (max-width: 767px) {
     display: block;
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
   }
 
   &__element {

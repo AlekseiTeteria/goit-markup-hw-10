@@ -190,6 +190,7 @@
   }
 }
 
+//be cearfuul flex reversed property is used
 @media screen and (max-width: 767px) {
   .contacts__link[href="tel:+380961111111"] {
     @include font-preset(500, 34px, 40px, 0.02em);
@@ -202,13 +203,14 @@
   }
 }
 
+//makes icons smaller
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts__link[href="tel:+380961111111"] > svg {
+  .contacts__link[href="mailto:info@devstudio.com"] > svg {
     width: 14px;
     height: 10px;
   }
 
-  .contacts__link[href="mailto:info@devstudio.com"] > svg {
+  .contacts__link[href="tel:+380961111111"] > svg {
     width: 10px;
     height: 14px;
   }

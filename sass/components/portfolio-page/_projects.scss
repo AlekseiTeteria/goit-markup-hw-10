@@ -7,12 +7,18 @@
     @include grid($quantaty: 1);
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include grid($quantaty: 2);
+  }
+
   &__description {
     padding: 20px 24px;
 
     background-color: #ffffff;
 
-    border: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
   }
 
   &__label {
@@ -27,6 +33,20 @@
     line-height: lineHeight(16px, 30px);
   }
 }
+
+//makes first element in projects collection enlarge with the .product__item 'cause the 2-d element in collection enlatges to.
+//It isn't correct solution, but it works
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product__item:first-child > .product__link {
+    height: 100%;
+  }
+
+  .product__item:first-child > .product__link div:nth-child(2) {
+    height: 34.44%; // <================================
+  }
+}
+//==============ЭТО КОСТЫЛЬ=============================
 
 .product__link {
   display: block;
@@ -61,8 +81,12 @@
   background-color: getColor(accent);
   color: getColor(text-alt);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   @include transition(transform);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 49px 24px;
+  }
 
   .product__item:hover &,
   .product__item:focus & {
