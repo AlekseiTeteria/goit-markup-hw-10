@@ -20,6 +20,13 @@
 
 //========NAVIGATION styles start here=============//
 
+@media screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .navigation {
   display: flex;
   margin-left: 93px;
@@ -206,7 +213,13 @@
     visibility getTransition(speed) getTransition(speed-func);
 
   @media screen and (min-width: 768px) {
-    display: none;
+    position: static;
+    display: flex;
+
+    height: 100%;
+
+    visibility: visible;
+    opacity: 1;
   }
 }
 
