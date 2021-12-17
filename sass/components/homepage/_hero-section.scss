@@ -10,7 +10,7 @@
 
   background-color: #2f303a;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -21,9 +21,7 @@
   }
 
   &__title {
-    margin-top: 0;
     margin-bottom: 30px;
-    padding: 0;
 
     @include font-preset(900, 44px, 60px, 0.06em);
     text-align: center;
@@ -31,7 +29,7 @@
 
     color: getColor(text-alt);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       @include font-preset(900, 26px, 42px, 0.06em);
     }
   }
