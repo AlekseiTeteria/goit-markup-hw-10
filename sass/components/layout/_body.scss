@@ -6,3 +6,7 @@ body {
   background-color: getColor(background-body);
   color: getColor(text-main);
 }
+
+body.modal-open {
+  overflow: hidden;
+}

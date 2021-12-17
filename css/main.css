@@ -322,6 +322,10 @@ body {
   color: #757575;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
