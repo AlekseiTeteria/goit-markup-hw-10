@@ -52,16 +52,19 @@
 
   @media screen and (max-width: 767px) {
     width: calc(100% - 30px);
+  }
 
+  @media screen and (max-width: 1199px) {
     min-width: auto;
     min-height: auto;
+
+    height: calc(100% - 50px);
 
     overflow: scroll;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    min-width: 450px;
-    min-height: auto;
+    width: auto;
   }
 }
 
