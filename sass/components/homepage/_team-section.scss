@@ -2,7 +2,7 @@
   @include section;
   background-color: getColor(background-alt);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding: 60px 0;
   }
 
@@ -18,7 +18,7 @@
 
     color: getColor(headings);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       margin-bottom: 30px;
 
       @include font-preset(700, 28px, 33px);
@@ -35,6 +35,10 @@
     margin-top: 0;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include grid($quantaty: 2);
+  }
+
   &__item {
     padding-bottom: 30px;
 
@@ -45,16 +49,14 @@
 
     background-color: getColor(background-body);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       padding-bottom: 24px;
     }
   }
 
   &__content {
     padding-top: 30px;
-    padding-right: 58px;
     padding-bottom: 0;
-    padding-left: 53px;
   }
   &__label {
     margin-bottom: 10px;
