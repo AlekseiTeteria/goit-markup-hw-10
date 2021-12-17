@@ -6,9 +6,3 @@ body {
   background-color: getColor(background-body);
   color: getColor(text-main);
 }
-
-@media screen and (max-width: 767px) {
-  .menu-container.is-opened body {
-    overflow: hidden;
-  }
-}
