@@ -1,10 +1,10 @@
 //================CSS RULES FOR MAIN SECTION IN PORTFOLIO===========//
 
 .projects-section {
-  @include section;
+  padding: 60px 0;
 
-  @media screen and (max-width: 1199px) {
-    padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    @include section;
   }
 
   &__container {
@@ -21,31 +21,38 @@
 //================FILTER MENU STYLES start here==================//
 
 .filter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  display: block;
+  margin-bottom: 40px;
 
-  @media screen and (max-width: 767px) {
-    display: block;
-    margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 30px;
   }
 
-  &__element {
-    padding-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
-    @media screen and (max-width: 767px) {
-      display: inline-block;
-      margin-bottom: 15px;
+  &__element {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+      margin-bottom: 0;
     }
   }
 
-  &:last-child {
-    padding-right: 0;
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

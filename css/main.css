@@ -1902,13 +1902,13 @@ body.modal-open {
 }
 
 .projects-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .projects-section {
-    padding: 60px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1941,22 +1941,21 @@ body.modal-open {
 }
 
 .filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
+  display: block;
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .filter {
-    display: block;
-    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1966,19 +1965,29 @@ body.modal-open {
   }
 }
 
-.filter__element {
-  padding-right: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .filter__element {
-    display: inline-block;
-    margin-bottom: 15px;
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
-.filter:last-child {
-  padding-right: 0;
+.filter__element {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__element {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter:last-child {
+    margin-right: 0;
+  }
 }
 
 .filter__btn {
