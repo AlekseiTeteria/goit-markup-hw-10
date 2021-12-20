@@ -45,10 +45,12 @@
   font-style: normal;
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
-
     @media screen and (max-width: 1199px) {
       margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
     }
   }
 
@@ -80,15 +82,16 @@
 
 //===============SOCIALS styles start here=================//
 .socials {
-  margin-left: 70px;
-
   @media screen and (max-width: 767px) {
     margin-left: 0;
     margin-bottom: 60px;
   }
 
+  @media screen and (min-width: 768px) {
+    margin-left: 70px;
+  }
+
   &__title {
-    padding-top: 12px;
     margin-bottom: 20px;
 
     @include font-preset($font-weight: 700, $line-height: 16px);
@@ -100,6 +103,10 @@
       padding-top: 0;
 
       text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 12px;
     }
   }
 
@@ -144,8 +151,10 @@
 
 //===============MAILING FORM styles start here=================//
 .mailing {
-  margin-left: 93px;
-  padding-top: 12px;
+  width: 100%;
+
+  margin-left: 0;
+  padding-top: 0;
 
   &__title {
     display: block;
@@ -162,18 +171,10 @@
   }
 
   &__form {
-    display: flex;
-
-    @media screen and (max-width: 1199px) {
-      display: block;
+    display: block;
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-
-    margin-left: 0;
-    padding-top: 0;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -181,16 +182,22 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
 }
 
 .mailing__input {
-  width: 358px;
+  width: 100%;
 
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
 
-  margin-right: 12px;
+  margin-right: 0;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -199,11 +206,10 @@
   color: getColor(text-alt);
   background-color: getColor(background-footer);
 
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-
-    margin-right: 0;
-    margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 
   &::placeholder {
@@ -214,6 +220,9 @@
 }
 
 .mailing__btn {
+  margin-left: auto;
+  margin-right: auto;
+
   @include button(
     flex,
     200px,
@@ -228,9 +237,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
 
-  @media screen and (max-width: 1200px) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

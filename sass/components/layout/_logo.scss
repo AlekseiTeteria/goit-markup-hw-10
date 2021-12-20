@@ -2,11 +2,13 @@
 .header__logo,
 .footer__logo {
   font-family: $font-second;
-  @include font-preset($font-weight: 700, $font-size: 26px, $line-height: 31px);
 
   @media screen and (max-width: 1199px) {
-    font-size: 24px;
-    line-height: lineHeight(24px, 28px);
+    @include font-preset(700, 24px, 28px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font-preset(700, 26px, 31px);
   }
 }
 

@@ -1,6 +1,4 @@
 .service {
-  @include section(0, 94px);
-
   &__container {
     @include container($display: block);
   }
@@ -17,11 +15,13 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    @include section(0, 94px);
+  }
 }
 
 .example {
-  // display: flex;
-  // flex-wrap: wrap;
   @include grid(100%, 3);
 
   z-index: 1;

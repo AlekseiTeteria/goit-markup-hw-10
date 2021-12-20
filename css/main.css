@@ -754,18 +754,27 @@ body.modal-open {
 .header__logo,
 .footer__logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19231;
-  letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 1199px) {
   .logo,
   .header__logo,
   .footer__logo {
+    font-weight: 700;
     font-size: 24px;
     line-height: 1.16667;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo,
+  .header__logo,
+  .footer__logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19231;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -869,13 +878,15 @@ body.modal-open {
   font-style: normal;
 }
 
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 @media screen and (max-width: 1199px) {
   .address__item:not(:last-child) {
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 
@@ -909,10 +920,6 @@ body.modal-open {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials {
-  margin-left: 70px;
-}
-
 @media screen and (max-width: 767px) {
   .socials {
     margin-left: 0;
@@ -920,8 +927,13 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .socials {
+    margin-left: 70px;
+  }
+}
+
 .socials__title {
-  padding-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -935,6 +947,12 @@ body.modal-open {
   .socials__title {
     padding-top: 0;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socials__title {
+    padding-top: 12px;
   }
 }
 
@@ -983,8 +1001,9 @@ body.modal-open {
 }
 
 .mailing {
-  margin-left: 93px;
-  padding-top: 12px;
+  width: 100%;
+  margin-left: 0;
+  padding-top: 0;
 }
 
 .mailing__title {
@@ -1005,22 +1024,14 @@ body.modal-open {
 }
 
 .mailing__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mailing__form {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .mailing {
-    width: 100%;
-    margin-left: 0;
-    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1032,12 +1043,20 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+}
+
 .mailing__input {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-right: 0;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1046,11 +1065,11 @@ body.modal-open {
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mailing__input {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1087,6 +1106,8 @@ body.modal-open {
 }
 
 .mailing__btn {
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,10 +1132,10 @@ body.modal-open {
   border: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .mailing__btn {
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -1387,11 +1408,6 @@ body.modal-open {
   letter-spacing: 0.03em;
 }
 
-.service {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
-
 .service__container {
   display: block;
   padding-right: 15px;
@@ -1433,6 +1449,13 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .service {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    padding-top: 0;
+    padding-bottom: 94px;
   }
 }
 
