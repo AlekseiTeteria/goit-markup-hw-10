@@ -1942,7 +1942,7 @@ body.modal-open {
 
 .filter {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1956,12 +1956,6 @@ body.modal-open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .filter {
-    margin-bottom: 30px;
   }
 }
 
@@ -1984,10 +1978,9 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .filter:last-child {
-    margin-right: 0;
-  }
+.filter:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .filter__btn {

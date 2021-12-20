@@ -22,16 +22,12 @@
 
 .filter {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,10 +45,9 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 

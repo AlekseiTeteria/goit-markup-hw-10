@@ -7,7 +7,7 @@
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
+    mobileMenu.classList.toggle('is-opened');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -22,7 +22,7 @@
   // в случае изменения ориентации устройства.
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
+    mobileMenu.classList.remove('is-opened');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
