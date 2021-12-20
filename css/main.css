@@ -1124,8 +1124,6 @@ body.modal-open {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: url("../images/bg-img-hero@1x.jpg"), -webkit-gradient(linear, left top, right top, color-stop(40%, #2f303a), color-stop(#c4c4c4), color-stop(40%, #2f303a));
   background-image: url("../images/bg-img-hero@1x.jpg"), linear-gradient(to right, #2f303a 40%, #c4c4c4, #2f303a 40%);
   background-size: 1600px, cover;
@@ -1138,6 +1136,13 @@ body.modal-open {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1172,12 +1177,6 @@ body.modal-open {
 
 .hero__title {
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36364;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -1187,6 +1186,17 @@ body.modal-open {
     font-size: 26px;
     line-height: 1.61538;
     letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36364;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
