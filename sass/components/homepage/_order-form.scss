@@ -5,15 +5,17 @@
   margin-right: auto;
   margin-left: auto;
 
-  font-size: 20px;
-  line-height: lineHeight(20px, 23px);
-
   text-align: center;
 
   color: getColor(headings);
 
   @media screen and (max-width: 767px) {
     @include font-preset(700, 20px, 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: lineHeight(20px, 23px);
   }
 }
 
@@ -27,17 +29,6 @@
     margin-bottom: 20px;
   }
 }
-
-// .form__input,
-// .form__comment {
-//   width: 100%;
-//   padding-top: 12px;
-//   padding-bottom: 12px;
-
-//   border: 1px solid;
-//   border-color: rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
-// }
 
 .form__input {
   @extend %formInput;

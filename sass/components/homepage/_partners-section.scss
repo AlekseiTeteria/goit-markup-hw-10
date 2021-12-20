@@ -1,8 +1,10 @@
 .partners {
-  @include section;
-
   @media screen and (max-width: 1199px) {
     padding: 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include section;
   }
 
   &__container {
@@ -10,9 +12,6 @@
   }
 
   &__title {
-    margin-bottom: 50px;
-
-    @include font-preset(700, 36px, 42px);
     text-align: center;
 
     color: getColor(headings);
@@ -22,27 +21,37 @@
 
       @include font-preset(700, 28px, 32px);
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+
+      @include font-preset(700, 36px, 42px);
+    }
   }
 }
 
 .company {
   display: flex;
 
-  &__link {
-    display: block;
-    width: 100%;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
 
-    @media screen and (max-width: 1199px) {
+    margin: -15px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__link {
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
 
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-
-    margin: -15px;
+  @media screen and (min-width: 1200px) {
+    &__link {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
