@@ -1,14 +1,14 @@
 //============GRID for project section================//
 
 .product {
-  @include grid($quantaty: 3);
-
-  @media screen and (max-width: 767px) {
-    @include grid($quantaty: 1);
-  }
+  @include grid($quantaty: 1);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     @include grid($quantaty: 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include grid($quantaty: 3);
   }
 
   &__description {
@@ -67,6 +67,10 @@
   position: relative;
 
   overflow: hidden;
+
+  & > img {
+    width: 100%;
+  }
 }
 
 .overlay__wrapper {
