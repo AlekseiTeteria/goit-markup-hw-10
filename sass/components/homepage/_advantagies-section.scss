@@ -1,6 +1,4 @@
 .advantagies {
-  @include section;
-
   &__container {
     @include container;
   }
@@ -13,12 +11,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    @include section;
+  }
 }
 
-.pluses {
-  @include grid(100%, 4);
-
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .pluses {
     @include grid(100%, 1);
     margin-top: 0;
 
@@ -26,20 +26,24 @@
       margin-top: 0;
     }
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pluses {
     @include grid(100%, 2);
-    margin-top: 0;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pluses {
+    @include grid(100%, 4);
   }
 }
 
 .card {
-  min-width: 270px;
-
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
 
   margin-bottom: 30px;
 
@@ -55,6 +59,14 @@
 
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+
+    min-width: 270px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   &__label {
