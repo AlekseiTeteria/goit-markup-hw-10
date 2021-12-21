@@ -123,8 +123,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
-    @include font-preset(400, 12px, 14px, 0.01em);
+  @media screen and (max-width: 1199px) {
+    @include font-preset(400, 12px, 14px);
   }
 
   & > a {

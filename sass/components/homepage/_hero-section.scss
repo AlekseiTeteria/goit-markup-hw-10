@@ -25,6 +25,7 @@
 
   &__title {
     margin-bottom: 30px;
+    text-transform: uppercase;
 
     color: getColor(text-alt);
 
@@ -35,7 +36,6 @@
     @media screen and (min-width: 1200px) {
       @include font-preset(900, 44px, 60px, 0.06em);
       text-align: center;
-      text-transform: uppercase;
     }
   }
 

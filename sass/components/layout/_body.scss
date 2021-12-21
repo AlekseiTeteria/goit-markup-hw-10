@@ -10,3 +10,7 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+.menu-container.is-opened body {
+  overflow: hidden;
+}
