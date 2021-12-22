@@ -283,8 +283,19 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  img {
+    max-width: 100%;
+  }
 }
 
 textarea {
@@ -2127,12 +2138,6 @@ body.modal-open {
 .overlay {
   position: relative;
   overflow: hidden;
-}
-
-.overlay > img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .overlay__wrapper {
