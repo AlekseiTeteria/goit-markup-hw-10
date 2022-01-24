@@ -1,0 +1,248 @@
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    transition: opacity 250ms $timingfunction, visibility 250ms $timingfunction;
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timingfunction;
+  
+    width: 528px;
+    height: 581px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    padding: 0%;
+  
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  
+  .close-modal-button {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    bottom: 10px;
+    left: 10px;
+    transition: fill 250ms $timingfunction;
+  }
+  .close-modal:focus .close-modal-button,
+  .close-modal:hover .close-modal-button {
+    fill: $actcolor
+  }
+  
+  .form--modal {
+    width: 448px;
+    min-height: 581px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .form-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+ 
+  .form--modal-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $seccolor;
+  }
+  
+  .check--modal-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $seccolor;
+  }
+  
+  .form--modal-box input {
+    padding: 12px;
+    padding-left: 42px;
+    font-size: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  
+  .form--modal-box:focus {
+    outline: none;
+    border: 1px solid $actcolor;
+  }
+  
+  .form-name {
+    margin-top: 4px;
+  }
+  
+  .form--modal-box .form-name {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    font: inherit;
+    padding: 12px 20px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    position: relative;
+    transition: border 250ms $timingfunction;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+  }
+  
+  .form-input:focus + .form--icon {
+    fill: #2196f3;
+    transition: fill 250ms $timingfunction;
+  }
+  
+  .form--icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+  }
+  
+  .form--icon-check {
+    fill: #fff;
+  }
+  
+  .form-texrarea {
+    resize: none;
+    padding: 12px 16px;
+    font: inherit;
+    border: 1px solid rgba(117, 117, 117, 0.5);
+    border-radius: 4px;
+    min-height: 120px;
+    margin-top: 4px;
+    transition: border 250ms $timingfunction;
+  }
+  
+  .form-texrarea:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+  }
+  
+  .policy-box {
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+  
+  .policy-box-name {
+    margin-left: 25px;
+  }
+  
+  .policy-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    z-index: 100;
+  }
+  
+  .policy-box-check {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    margin-right: 10px;
+    top: 12px;
+    left: 12px;
+    transition: background-color 250ms $timingfunction;
+  }
+  
+  .policy-checkbox:checked + .policy-box-check {
+    background-color: #2196f3;
+  
+    border: none;
+  }
+  
+  .policy-box a {
+    color: #2196f3;
+    text-decoration: underline;
+  }
+  
+  .form-submit-btn {
+    padding: 10px 55px;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: box-shadow 250ms $timingfunction, background-color 250ms $timingfunction;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  

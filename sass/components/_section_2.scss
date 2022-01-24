@@ -1,0 +1,27 @@
+.section-title {
+    @include section-title ($maincolorblack, "Roboto", bold, 36px, calc(42 / 36), center, 50px)
+}
+
+.doing {
+    background: $maincolorwit;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 94px;
+   
+}
+.doing .doing__item + .doing__item {
+    margin-left: 30px;
+}
+
+.doing__list {
+    display: flex;
+}
+.testing {
+    position: relative;
+    text-align: center;
+
+}
+.doings__item {
+    @extend %flexbox;
+    @include doing__item (absolute,'roboto',Bold,14px, 16px,100%, 70px, 0, 0, center, $maincolorwit, rgba(47, 48, 58, 0.8), uppercase)
+  }

@@ -1,0 +1,350 @@
+%flexbox {
+   display: flex;
+   justify-content: center;
+ }
+ @mixin customer ($w, $h, $AI, $p, $BR, $b, $f) {
+     width: $w;
+     height: $h;
+     align-items:  $AI;
+     padding: $p;
+     border-radius:  $BR;
+     border: 1px solid #afb1b8;
+     background: $b;
+     fill:  $f;
+ }
+ 
+ @mixin font ($fw, $fs, $lh, $ls, $col: #212121) { 
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $col;
+ }
+ @mixin fontsecond ($w, $h, $p, $br, $bkc, $f){
+     width: $w;
+     height: $h;
+     padding: $p;
+     border-radius: $br;
+     background:   $bkc;
+     fill: $f;
+ }
+ @mixin footer_1 ($col, $fs, $lh, $mt){
+    color: $col;
+    font-size: $fs;
+    line-height:$lh;
+    margin-top: $mt;
+ }
+ @mixin footer_title ($fs, $lh, $mb){
+   font-size: $fs;
+   line-height: $lh;
+   margin-bottom: $mb;
+ }
+ @mixin footer_soc ($col, $w, $h, $mt, $ml){
+    width: $w;
+    height: $h;
+    margin-top:  $mt;
+    color: $col;
+    margin-left: $ml;
+ }
+ @mixin ptml ($pt, $ml){
+    padding-top:$pt;
+    margin-left: $ml;
+ }
+ @mixin futer_input ($col, $w, $br, $fs, $lh, $bg, $pl,$pt, $pb ) {
+   width: $w;
+   border-radius:  $br;
+   font-size: $fs;
+   line-height: $lh;
+   color: $col;
+   background:  $bg;
+   padding-left: $pl;
+   padding-top: $pt;
+   padding-bottom:  $pb;
+ }
+ @mixin title_form_footer ($col, $fs, $lh, $mb) {
+    font-size:  $fs;
+    line-height: $lh;
+    color: $col;
+    margin-bottom: $mb;
+ }
+ @mixin form_btn_footer ($col, $FW, $FS, $LH, $LS, $bg, $BR, $PL, $PT, $PB, $PR, $ML){
+    font-weight:  $FW;
+    font-size:  $FS;
+    line-height: $LH;
+    letter-spacing: $LS;
+    background: $bg;
+    border-radius: $BR;
+    color: $col;
+    padding-left:$PL;
+    padding-top: $PT;
+    padding-bottom: $PB;
+    padding-right:  $PR;
+    margin-left: $ML;
+ }
+ 
+ @mixin links ($col, $FF, $MR, $p, $FW, $LH, $LS) {
+    color: $col;
+    font-family: $FF;
+    margin-right: $MR;
+    padding: $p;
+    font-weight: $FW;
+    line-height:  $LH;
+    letter-spacing: $LS;
+ }
+ 
+ @mixin hero-title ($fw, $fs, $lh, $ls, $col: #212121, $mw, $mb) { 
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $col;
+    max-width: $mw;
+    margin-bottom: $mb;
+ }
+ @mixin backdrop ($w, $h, $l, $t, $bg){
+     width: $w;
+     height: $h;
+     left: $l;
+     top: $t;
+     background: $bg; 
+ }
+ 
+ @mixin modal ($l, $t, $w, $h, $br, $bg){
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+    background:   $bg;
+    border-radius:$br;
+ }
+ @mixin close-modal ($t,$r,$p,$w,$h,$br,$bg) {
+    top: $t;
+    right: $r;
+    padding: $p;
+    width: $w;
+    height: $h;
+    background:  $bg;
+    border-radius: $br;
+    
+ }
+ @mixin close-modal-button ($t,$r,$b,$l) {
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+ }
+ @mixin form--modal ($w, $mh, $ml, $mr, $pt, $pb) {
+    width: $w;
+    min-height: $mh;
+    margin-left: $ml;
+    margin-right: $mr;
+    padding-top:  $pt;
+    padding-bottom: $pb;
+ }
+ @mixin form-title ($fw, $fs, $lh, $ta, $ls, $mb) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+    letter-spacing: $ls;
+    margin-bottom: $mb;
+ }
+ @mixin form--modal-box ($mb, $fs, $lh, $ls, $col) {
+    margin-bottom: $mb;
+    font-size:  $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $col;
+ }
+ @mixin check--modal-box ($fs, $lh, $ls, $col) {
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color:  $col;
+ }
+ @mixin form-modal-box-input ($p, $pl, $fs, $br) {
+    padding: $p;
+    padding-left: $pl;
+    font-size: $fs;
+    border-radius: $br;
+ }
+ @mixin form-input ($w, $h, $m, $p, $pl, $br) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    padding: $p;
+    padding-left: $pl;
+    border-radius: $br;
+ }
+ @mixin form-texrarea ($p, $br, $mh, $mt) {
+    padding: $p;
+    border-radius: $br;
+    min-height: $mh;
+    margin-top: $mt;
+ }
+ @mixin policy-box ($fs, $mb, $ml, $mt, $col ) {
+    font-size: $fs;
+    color: $col;
+    margin-bottom: $mb;
+    margin-left: $ml;
+    margin-top: $mt;
+ }
+ @mixin policy-checkbox  ($w, $h, $m, $b, $p) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    border: $b;
+    padding: $p;
+ }
+ @mixin policy-box-check  ($w, $h, $br, $mr, $t, $l) {
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    margin-right: $mr;
+    top: $t;
+    left: $l;
+ }
+ @mixin form-submit-btn ($p, $fs, $lh, $bc, $col, $m, $br, $fw) {
+    padding: $p;
+    font-size: $fs;
+    line-height: $lh;
+    background-color:  $bc;
+    color: $col;
+    margin: $m;
+    border-radius: $br;
+    font-weight: $fw;
+ }
+ @mixin btnportfolio ($fw, $fs, $p, $br, $col, $bcol) {
+    font-weight: $fw;
+    font-size: $fs;
+    padding:$p;
+    border-radius: $br;
+    color:$col;
+    background-color: $bcol;
+ }
+ @mixin cart__title ($col, $fw, $fs, $lh, $ls) {
+    color: $col;
+    font-weight: $fw;
+    font-size:  $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+ }
+ @mixin cart__text ($mt, $col, $fs, $lh, $ls) {
+    margin-top: $mt;
+    color: $col;
+    font-size: $fs;
+    line-height:  $lh;
+    letter-spacing: $ls;
+ }
+ @mixin cart__overley ($p, $w, $mh, $l, $t, $bcol, $fw, $fs, $lh, $ls, $col, $op) {
+    padding: $p;
+    width: $w;
+    min-height: $mh;
+    left: $l;
+    top: $t;
+    background-color: $bcol;
+    font-weight:  $fw;
+    font-size: $fs;
+    line-height:  $lh;
+    letter-spacing: $ls;
+    color: $col;
+    opacity:  $op; 
+ }
+ @mixin btn-item ($w, $h, $p, $mb, $b, $bgc, $ai) {
+    width: $w;
+    height: $h;
+    padding:$p;
+    margin-bottom:  $mb;
+    border: $b;
+    background: $bgc;
+    align-items:  $ai;
+ }
+ @mixin hide ($v, $m, $w, $h, $ov, $op, $mt) {
+    visibility: $v;
+    margin: $m;
+    width: $w;
+    height: $h;
+    overflow:$ov;
+    opacity: $op;
+    margin-top:  $mt;
+ }
+ @mixin section-text ($col, $ff, $fs, $lh, $mt) {
+    color:$col;
+    font-family:  $ff;
+    font-size:  $fs;
+    line-height: $lh;
+    margin-top: $mt;
+ }
+ @mixin section-titles ($col, $ff, $fw, $fs, $lh, $tt) {
+    color: $col;
+    font-family:$ff;
+    font-weight:$fw;
+    font-size:  $fs;
+    line-height: $lh;
+    text-transform:  $tt; 
+ }
+ @mixin section-title ($col, $ff, $fw, $fs, $lh, $ta, $mb) {
+    color:  $col;
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+    margin-bottom:  $mb; 
+ }
+ @mixin doing ($bg, $ta, $pt, $pb) {
+    background: $bg;
+    text-align: $ta;
+    padding-top: $pt;
+    padding-bottom:  $pb;  
+ }
+ @mixin doing__item ($p, $ff,$fst, $fsz, $lh, $w, $h, $b, $l, $ai, $col, $bg, $tt) {
+    position: $p;
+    font-family: $ff;
+    font-style: $fst;
+    font-size: $fsz;
+    line-height: $lh;
+    width: $w;
+    height: $h;
+    bottom: $b;
+    left:$l;
+    align-items:  $ai;
+    color: $col;
+    background: $bg;
+    text-transform: $tt;  
+ }
+ @mixin out-team ($bg, $ta, $pt, $pb) {
+    background:$bg;
+    text-align: $ta;
+    padding-top: $pt;
+    padding-bottom: $pb;  
+ }
+ @mixin out-teamtitle ($fw, $fs, $lh, $mb, $ta) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    margin-bottom:  $mb;
+    text-align:  $ta;  
+ }
+ @mixin out-team-name ($col, $fw, $fs, $lh, $ta, $mb, $mt) {
+    color: $col;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+    margin-bottom: $mb;
+    margin-top: $mt;  
+ }
+ @mixin out-team-profession ($col, $fs, $lh, $ta) {
+    color: $col;
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;  
+ }
+ @mixin social_btn ($w, $h, $br, $f, $mt) {
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    fill: $f;
+    margin-top: $mt;   
+ }

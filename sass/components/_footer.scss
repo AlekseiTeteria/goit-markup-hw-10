@@ -1,0 +1,107 @@
+.footer {
+  background: $backcraundcolor;
+  padding: 60px 0px;
+}
+.footer-contact {
+  color: $maincolorwit;
+  font-size: 14px;
+  line-height: calc(27 / 14);
+  margin-top: 20px;
+}
+.address {
+    font-style: normal;
+}
+.logo-footer {
+  color:  $maincolorwit;
+}
+.footer-contact:hover,
+.footer-contact:focus,
+.footer-contact .mailto:hover,
+.footer-contact .mailto:focus,
+.footer-contact .tel:hover,
+.footer-contact .tel:focus {
+  color: $actcolor;
+}
+.footer-contact .mailto,
+.footer-contact .tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.end {
+  display: flex;
+  justify-content: flex-start;
+}
+.soc-title {
+  @include footer_title (14px, 1.17, 20px)
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  @include footer_soc ($maincolorwit, 206px,  80px, 15px,  70px)
+}
+.connect {
+  background: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+
+ }
+
+ .form-footer {
+  position: relative;
+  padding-top: 16px;
+  margin-left: 93px;
+}
+.footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  @include futer_input (rgba(255, 255, 255, 0.6), 358px, 4px, 16px, calc(20 / 16), rgba(47, 48, 58, 1),16px,15px, 15px )
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  outline: 1px solid  $actcolor;
+  color: #e5e5e5;
+  transition-property: outline, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-form-footer {
+  text-transform: uppercase;
+  @include title_form_footer (#fff, 14px,  1.17, 20px) 
+}
+.form-btn-footer {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  @include  form_btn_footer (#fff, bold, 16px, calc(30 / 16), 0.06em,  $actcolor,  4px, 29px, 10px, 10px, 62px, 12px)
+}
+.icon-subscribe {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  fill: #fff;
+  cursor: pointer;
+}
+.cocntact-cond {
+  color:  $actcolor;
+  text-decoration: underline;
+}
+.footer-social__title {
+  font-size: 14px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+.footer-social {
+  width: 206px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: $maincolorwit;
+  margin-left: 70px;
+}

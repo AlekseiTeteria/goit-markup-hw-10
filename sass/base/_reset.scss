@@ -1,0 +1,70 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.03em;
+    line-height: 1.46;
+}
+html {
+  box-sizing: border-box;
+}
+/*marshal header  */
+.section {
+
+    padding: 94px 0;
+}
+.container {
+    padding: 0 15px;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.hidden-item {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -1px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+  }
+nav,
+.site-nav,
+.contacts,
+.link,
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    border-bottom: 1px solid #ececec;
+}
+
+footer {
+    background-color: var(--back-craund-color);
+}
+address,
+.footer-list
+footer .container {
+    display: flex;
+    flex-direction: column;
+}

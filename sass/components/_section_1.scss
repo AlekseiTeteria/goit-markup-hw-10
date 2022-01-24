@@ -1,0 +1,34 @@
+.hide {
+    @include hide (hidden, 0, 1px, 1px, hidden, 0, -1px)
+}
+    
+
+.section-subtitle {
+    text-align: center;
+}
+.section-text {
+    @include section-text ($seccolor,  "Roboto", 14px,  calc(24 / 14), 10px) 
+}
+.section-titles {
+    @include section-titles ($maincolorblack, "Roboto", bold, 14px, calc(16 / 14), uppercase)
+}
+.future {
+    margin: 0 auto;
+    display: flex;
+}
+.future .future__item + .future__item {
+    margin-left: 30px;
+}
+.future .future__item {
+    width: 270px;
+}
+.future__btn {
+    width: 270px;
+    height: 120px;
+    padding: 0;
+    margin-bottom: 30px;
+    @extend %flexbox;
+    align-items: center;
+    border: none;
+    background: $backgraundcolor;
+  }
